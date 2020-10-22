@@ -1,32 +1,497 @@
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#สร้างโดย https://www.toptal.com/developers/gitignore/api/cmake,clion+all,visualstudio,c++
+#แก้ไขที่ https://www.toptal.com/developers/gitignore?templates=cmake,clion+all,visualstudio,c++
 
-# Precompiled Headers
-*.gch
-*.pch
+# ## C ++ ###
+#ข้อกำหนดเบื้องต้น
+* .d
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+#ไฟล์วัตถุที่คอมไพล์
+* .slo
+* .lo
+* .o
+* .obj
 
-# Fortran module files
-*.mod
-*.smod
+#ส่วนหัวที่คอมไพล์ล่วงหน้า
+* .gch
+* .pch
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+#คอมไพล์ไลบรารีไดนามิก
+* .so
+* .dylib
+* .dll
 
-# Executables
-*.exe
-*.out
-*.app
+#ไฟล์โมดูล Fortran
+* .mod
+* .smod
+
+#รวบรวมไลบรารีแบบคงที่
+* .lai
+* .la
+* .a
+
+# ไฟล์ปฏิบัติการ
+* .exe
+* .out
+* .app
+
+# ## CLion + ทั้งหมด ###
+#ครอบคลุม JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm และ Rider
+#อ้างอิง: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# สิ่งที่ผู้ใช้เฉพาะ
+.idea / ** / workspace.xml
+.idea / ** / task.xml
+.idea / ** / usage.statistics.xml
+.idea / ** / พจนานุกรม
+.idea / ** / ชั้นวาง
+
+#ไฟล์ที่สร้างขึ้น
+.idea / ** / contentModel.xml
+
+# ไฟล์ที่ละเอียดอ่อนหรือมีการปั่นป่วนสูง
+.idea / ** / dataSources /
+.idea / ** / dataSources.ids
+.idea / ** / dataSources.local.xml
+.idea / ** / sqlDataSources.xml
+.idea / ** / dynamic.xml
+.idea / ** / uiDesigner.xml
+.idea / ** / dbnavigator.xml
+
+# Gradle
+.idea / ** / gradle.xml
+.idea / ** / ห้องสมุด
+
+# Gradle และ Maven พร้อมการนำเข้าอัตโนมัติ
+#เมื่อใช้ Gradle หรือ Maven กับการนำเข้าอัตโนมัติคุณควรยกเว้นไฟล์โมดูล
+#เนื่องจากจะถูกสร้างขึ้นใหม่และอาจทำให้ปั่นป่วน ไม่ใส่ข้อคิดเห็นหากใช้
+#นำเข้าอัตโนมัติ
+# .idea / สิ่งประดิษฐ์
+# .idea / compiler.xml
+# .idea / jarRepositories.xml
+# .idea / module.xml
+# .idea / *. iml
+# .idea / โมดูล
+# * .iml
+# * .ipr
+
+# CMake
+cmake สร้าง - * /
+
+#ปลั๊กอิน Mongo Explorer
+.idea / ** / mongoSettings.xml
+
+#รูปแบบโครงการตามไฟล์
+* .iws
+
+# IntelliJ
+ออก /
+
+# mpeltonen / sbt-idea ปลั๊กอิน
+.idea_modules /
+
+#ปลั๊กอิน JIRA
+atlassian-ide-plugin.xml
+
+#ปลั๊กอิน Cursive Clojure
+.idea / replstate.xml
+
+#ปลั๊กอิน Crashlytics (สำหรับ Android Studio และ IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+#ไคลเอนต์ Rest ตามบรรณาธิการ
+.idea / httpRequests
+
+# Android studio 3.1+ ไฟล์แคชซีเรียลไลซ์
+.idea / caches / build_file_checksums.ser
+
+# ## CLion + แพทช์ทั้งหมด ###
+#ละเว้นทั้งโฟลเดอร์. ina และไฟล์. iml ทั้งหมด
+#ดู https://github.com/joeblau/gitignore.io/issues/186 และ https://github.com/joeblau/gitignore.io/issues/360
+
+.idea /
+
+#เหตุผล: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+
+* .iml
+module.xml
+.idea / misc.xml
+* .ipr
+
+#ปลั๊กอิน Sonarlint
+.idea / sonarlint
+
+# ## CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+การทดสอบ
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# ## แพทช์ CMake ###
+#โครงการภายนอก
+* - คำนำหน้า /
+
+# ## VisualStudio ###
+# # ละเว้นไฟล์ชั่วคราว Visual Studio สร้างผลลัพธ์และ
+# # ไฟล์ที่สร้างโดยโปรแกรมเสริม Visual Studio ยอดนิยม
+# #
+# # รับข้อมูลล่าสุดจาก https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+
+#ไฟล์เฉพาะผู้ใช้
+* .rsuser
+* .suo
+* .user
+* .userosscache
+* .sln.docstates
+
+#ไฟล์เฉพาะผู้ใช้ (MonoDevelop / Xamarin Studio)
+* .userprefs
+
+#ไฟล์สร้างโมโนอัตโนมัติ
+mono_crash *
+
+#สร้างผลลัพธ์
+[ Dd ] ebug /
+[ Dd ] ebugPublic /
+[ Rr ] ปล่อย /
+[ Rr ] eleases /
+x64 /
+x86 /
+[ Aa ] [ Rr ] [ มม ] /
+[ Aa ] [ Rr ] [ มม ] 64 /
+ตึก /
+[ Bb ] ใน /
+[ Oo ] bj /
+[ Ll ] og /
+[ Ll ] ogs /
+
+#ไดเรกทอรีแคช / ตัวเลือก Visual Studio 2015/2017
+.vs /
+# ไม่ใส่ข้อคิดเห็นหากคุณมีงานที่สร้างไฟล์คงที่ของโครงการใน wwwroot
+# wwwroot /
+
+# Visual Studio 2017 สร้างไฟล์อัตโนมัติ
+สร้าง\ Files /
+
+#ผลการทดสอบ MSTest
+[ Tt ] est [ Rr ] esult * /
+[ Bb ] uild [ Ll ] og. *
+
+# NUnit
+* .VisualState.xml
+TestResult.xml
+แม่ชี - * .xml
+
+#สร้างผลลัพธ์ของโครงการ ATL
+[ Dd ] ebugPS /
+[ Rr ] eleasePS /
+dlldata.c
+
+#ผลลัพธ์มาตรฐาน
+BenchmarkDotNet.Artifacts /
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+สิ่งประดิษฐ์ /
+
+# StyleCop
+StyleCopReport.xml
+
+#ไฟล์ที่สร้างโดย Visual Studio
+* _i.c
+* _p.c
+* _h.h
+* .ilk
+* .meta
+* .iobj
+* .pdb
+* .ipdb
+* .pgc
+* .pgd
+* .rsp
+* .sbr
+* .tlb
+* .tli
+* .tlh
+* .tmp
+* .tmp_proj
+* _wpftmp.csproj
+* .log
+* .vspscc
+* .vssscc
+.builds
+* .pidb
+* .svclog
+* .scc
+
+#ไฟล์ทดสอบ Chutzpah
+_Chutzpah *
+
+#ไฟล์แคช Visual C ++
+ipch /
+* .aps
+* .ncb
+* .opendb
+* .opensdf
+* .sdf
+* .cachefile
+* .VC.db
+* .VC.VC.opendb
+
+# Visual Studio profiler
+* .psess
+* .vsp
+* .vspx
+* .sap
+
+#ไฟล์ Visual Studio Trace
+* .e2e
+
+# TFS 2012 Local Workspace
+$ tf /
+
+#ชุดเครื่องมืออัตโนมัติคำแนะนำ
+* .gpState
+
+# ReSharper เป็นโปรแกรมเสริมการเข้ารหัส. NET
+_ReSharper * /
+* . [ Rr ] e [ Ss ] harper
+* .DotSettings.user
+
+# TeamCity เป็นส่วนเสริมในการสร้าง
+_TeamCity *
+
+# DotCover เป็นเครื่องมือครอบคลุมรหัส
+* .dotCover
+
+# AxoCover เป็นเครื่องมือครอบคลุมรหัส
+.axoCover / *
+! .axoCover / settings.json
+
+# Coverlet เป็นเครื่องมือครอบคลุมรหัสข้ามแพลตฟอร์มฟรี
+ความครอบคลุม* [ .json, .xml, .info ]
+
+#ผลการครอบคลุมรหัส Visual Studio
+* .coverage
+* .coveragexml
+
+# NCrunch
+_NCrunch_ *
+. * กระทืบ* .local.xml
+nCrunchTemp_ *
+
+# MightyMoose
+* .mm. *
+AutoTest.Net /
+
+#เว็บปรับแต่ง (sass)
+.sass แคช /
+
+#ติดตั้งโฟลเดอร์เอาต์พุต
+[ เเล้ว ] xpress /
+
+# DocProject เป็น Add-in ของตัวสร้างเอกสาร
+DocProject / buildhelp /
+DocProject / Help / * .HxT
+DocProject / Help / * .HxC
+DocProject / Help / * .hhc
+DocProject / Help / * .hhk
+DocProject / Help / * .hhp
+DocProject / Help / Html2
+DocProject / Help / html
+
+#คลิก - ครั้งเดียวไดเร็กทอรี
+เผยแพร่ /
+
+#เผยแพร่ผลงานเว็บ
+* . [ Pp ] ublish.xml
+* .azurePubxml
+#หมายเหตุ: แสดงความคิดเห็นในบรรทัดถัดไปหากคุณต้องการตรวจสอบการตั้งค่าการปรับใช้เว็บของคุณ
+#แต่สตริงการเชื่อมต่อฐานข้อมูล (ที่มีรหัสผ่านที่เป็นไปได้) จะไม่เข้ารหัส
+* .pubxml
+* .publishproj
+
+# Microsoft Azure Web App เผยแพร่การตั้งค่า แสดงความคิดเห็นในบรรทัดถัดไปหากคุณต้องการ
+# ตรวจสอบการตั้งค่าการเผยแพร่ Azure Web App ของคุณ แต่มีข้อมูลที่ละเอียดอ่อนอยู่
+#ในสคริปต์เหล่านี้จะไม่เข้ารหัส
+เผยแพร่สคริปต์ /
+
+# NuGet แพ็คเกจ
+* .nupkg
+#แพ็คเกจสัญลักษณ์ NuGet
+* .snupkg
+#สามารถละเว้นโฟลเดอร์แพ็คเกจได้เนื่องจากการคืนค่าแพ็คเกจ
+** / [ Pp ] ackages / *
+#ยกเว้น build / ซึ่งใช้เป็นเป้าหมาย MSBuild
+! ** / [ Pp ] ackages / สร้าง /
+# ไม่แสดงความคิดเห็นหากจำเป็นอย่างไรก็ตามโดยทั่วไปจะสร้างใหม่เมื่อจำเป็น
+# ! ** / [Pp] ackages / repositories.config
+ไฟล์ project.json ของ# NuGet v3 สร้างไฟล์ที่ไม่น่าสนใจมากขึ้น
+* .nuget.props
+* .nuget.targets
+
+# Microsoft Azure สร้างผลลัพธ์
+csx /
+* .build.csdef
+
+# Microsoft Azure Emulator
+ecf /
+rcf /
+
+#ไดเรกทอรีและไฟล์แพคเกจแอป Windows Store
+AppPackages /
+BundleArtifacts /
+Package.StoreAssociation.xml
+_pkginfo.txt
+* .appx
+* .appxbundle
+* .appxupload
+
+#ไฟล์แคช Visual Studio
+#ไฟล์ที่ลงท้ายด้วย. cache สามารถละเว้นได้
+* . [ Cc ] ache
+#แต่ติดตามไดเรกทอรีที่ลงท้ายด้วย. แคช
+! ? * . [ Cc ] ปวด /
+
+#อื่น ๆ
+ClientBin /
+~ $ *
+* ~
+* .dbmdl
+* .dbproj.schemaview
+* .jfm
+* .pfx
+* .publishsettings
+orleans.codegen.cs
+
+# การรวมไฟล์ชื่อที่คาดเดายากอาจทำให้เกิดความเสี่ยงด้านความปลอดภัย
+# (https://github.com/github/gitignore/pull/2483#issue-259490424)
+# * .snk
+
+#เนื่องจากมีเวิร์กโฟลว์หลายขั้นตอนให้ยกเลิกการใส่ข้อคิดเห็นบรรทัดถัดไปเพื่อละเว้น bower_components
+# (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
+# bower_components /
+
+#โครงการ RIA / Silverlight
+Generated_Code /
+
+#สำรองและรายงานไฟล์จากการแปลงไฟล์โครงการเก่า
+#เป็น Visual Studio เวอร์ชันใหม่กว่า ไม่จำเป็นต้องใช้ไฟล์สำรอง
+#เพราะเรามี git ;-)
+_UpgradeReport_Files /
+สำรองข้อมูล* /
+UpgradeLog * .XML
+UpgradeLog * .htm
+บริการผ้าสำรอง /
+* .rptproj.bak
+
+#ไฟล์ SQL Server
+* .mdf
+* .ldf
+* .ndf
+
+#โครงการ Business Intelligence
+* .rdl.data
+* .bim.layout
+* .bim_ * .settings
+* .rptproj.rsuser
+* - [ Bb ] ackup.rdl
+* - [ Bb ] ackup  ( [ 0-9 ] ) .rdl
+* - [ Bb ] ackup  ( [ 0-9 ] [ 0-9 ] ) .rdl
+
+# Microsoft Fakes
+FakesAssemblies /
+
+#ไฟล์การตั้งค่าปลั๊กอิน GhostDoc
+* .GhostDoc.xml
+
+# Node.js เครื่องมือสำหรับ Visual Studio
+.ntvs_analysis.dat
+node_modules /
+
+#บันทึกการสร้าง Visual Studio 6
+* .plg
+
+#ไฟล์ตัวเลือกพื้นที่ทำงาน Visual Studio 6
+* .opt
+
+# Visual Studio 6 ไฟล์พื้นที่ทำงานที่สร้างขึ้นโดยอัตโนมัติ (มีไฟล์ที่เปิดอยู่ ฯลฯ )
+* .vbw
+
+# Visual Studio LightSwitch สร้างเอาต์พุต
+** / * .HTMLClient / GeneratedArtifacts
+** / * .DesktopClient / GeneratedArtifacts
+** / * .DesktopClient / ModelManifest.xml
+** / *. เซิร์ฟเวอร์ / GeneratedArtifacts
+** / *. เซิร์ฟเวอร์ / ModelManifest.xml
+_Pvt_Extensions
+
+#ผู้จัดการพึ่งพิง
+.paket / paket.exe
+paket- ไฟล์ /
+
+# FAKE - F # ทำ
+. ปลอม /
+
+# CodeRush การตั้งค่าส่วนบุคคล
+.cr / ส่วนบุคคล
+
+#เครื่องมือ Python สำหรับ Visual Studio (PTVS)
+__pycache__ /
+* .pyc
+
+#เค้ก - ไม่ใส่ข้อคิดเห็นหากคุณใช้มัน
+#เครื่องมือ / **
+# ! tools / package.config
+
+#แท็บสตูดิโอ
+* .tss
+
+#ไฟล์การกำหนดค่า JustMock ของ Telerik
+* .jmconfig
+
+# BizTalk สร้างเอาต์พุต
+* .btp.cs
+* .btm.cs
+* .odx.cs
+* .xsd.cs
+
+#ผลการวิเคราะห์ UI ของ OpenCover
+OpenCover /
+
+# Azure Stream Analytics เอาต์พุตการรันในเครื่อง
+ASALocalRun /
+
+# MSBuild บันทึกไบนารีและโครงสร้าง
+* .binlog
+
+#ไฟล์การกำหนดค่าดีบักเกอร์ NVidia Nsight GPU
+* .nvuser
+
+# MFractors (เครื่องมือเพิ่มประสิทธิภาพ Xamarin) โฟลเดอร์การทำงาน
+.mfractor /
+
+#ประวัติท้องถิ่นสำหรับ Visual Studio
+.localhistory /
+
+# BeatPulse ฐานข้อมูลอุณหภูมิตรวจสอบสุขภาพ
+healthchecksdb
+
+#โฟลเดอร์สำรองสำหรับเครื่องมือแปลงอ้างอิงแพ็คเกจใน Visual Studio 2017
+การย้ายข้อมูลสำรอง /
+
+# Ionide (เครื่องมือข้ามแพลตฟอร์ม F # VS Code tools) โฟลเดอร์การทำงาน
+.ionide /
+
+#จบ https://www.toptal.com/developers/gitignore/api/cmake,clion+all,visualstudio,c++
